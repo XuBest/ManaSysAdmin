@@ -45,7 +45,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        旅游信息推荐系统设计与实现
+                        茗动物园信息管理
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -59,14 +59,14 @@
 <span class="caret"></span>
 </a>
 <ul class="dropdown-menu">
-                    <ssm:sql var="mapxinwenfenlei1" type="select">SELECT id,fenleimingcheng FROM xinwenfenlei</ssm:sql>
-<c:forEach items="${mapxinwenfenlei1}" var="m"><c:set var="m" value="${m}" scope="request" />
-<li><a href="xinwenxinxilist.do?fenlei=${m.id}">${m.fenleimingcheng}</a></li>
+                    <ssm:sql var="mapnewstype1" type="select">SELECT id,typename FROM newstype</ssm:sql>
+<c:forEach items="${mapnewstype1}" var="m"><c:set var="m" value="${m}" scope="request" />
+<li><a href="Newslist.do?fenlei=${m.id}">${m.typename}</a></li>
 </c:forEach>
 </ul>
 </li>
 <li class="dropdown">
-<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">景区信息
+<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">馆区信息
 <span class="caret"></span>
 </a>
 <ul class="dropdown-menu">
