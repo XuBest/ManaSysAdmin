@@ -21,7 +21,7 @@
         <div class="copyrightnr">
             地址：xxxxxxxxxxxxx　　电话：0000-00000000　　手机：12312312312
             <br></br>
-            版权所有：旅游信息推荐系统设计与实现 　　ICP备********号        </div>
+            CopyRight：动物园信息管理系统设计与实现 　　       </div>
     </div>
 
 

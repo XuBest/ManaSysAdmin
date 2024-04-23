@@ -148,31 +148,18 @@ public class LiuyanbanController extends BaseController
         Liuyanban post = new Liuyanban();  // 创建实体类
         // 设置前台提交上来的数据到实体类中
         post.setXingming(Request.get("xingming"));
-
         post.setLianxidianhua(Request.get("lianxidianhua"));
-
         post.setLiuyanneirong(Request.get("liuyanneirong"));
-
         post.setLiuyanren(Request.get("liuyanren"));
-
         post.setHuifuneirong(Request.get("huifuneirong"));
-
         post.setAddtime(Info.getDateStr());
-    
-
-        
-
                 service.insert(post); // 插入数据
         int charuid = post.getId().intValue();
-        
-
         if(isAjax()){
             return jsonResult(post);
-
         }
-        return showSuccess("保存成功" , Request.get("referer").equals("") ? request.getHeader("referer") : Request.get("referer"));
+        return showSuccess("提交成功" , Request.get("referer").equals("") ? request.getHeader("referer") : Request.get("referer"));
     }
-
     /**
     * 更新内容
     * @return
