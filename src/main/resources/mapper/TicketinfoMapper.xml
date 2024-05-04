@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.TicketinfoMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Ticketinfo">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="ticketid" property="ticketid" jdbcType="INTEGER"/>
+                                    <result column="ticketkey" property="ticketkey" jdbcType="VARCHAR"/>
+                                    <result column="ticketname" property="ticketname" jdbcType="VARCHAR"/>
+
+                                    <result column="price" property="price" jdbcType="DECIMAL"/>
+                                    <result column="ordernum" property="ordernum" jdbcType="VARCHAR"/>
+                                    <result column="ordertime" property="ordertime" jdbcType="VARCHAR"/>
+                                    <result column="ordername" property="ordername" jdbcType="VARCHAR"/>
+                                    <result column="phonenum" property="phonenum" jdbcType="VARCHAR"/>
+                                    <result column="ticketstatus" property="ticketstatus" jdbcType="VARCHAR"/>
+                                    <result column="notice" property="notice" jdbcType="VARCHAR"/>
+                                    <result column="adder" property="adder" jdbcType="VARCHAR"/>
+                                    <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+                                            <result column="ifpay" property="ifpay" jdbcType="VARCHAR"/>
+        
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, ticketid, ticketkey, ticketname, price, ordernum, ordertime, ordername, phonenum, ticketstatus, notice, adder, addtime, ifpay    </sql>
+    </mapper>

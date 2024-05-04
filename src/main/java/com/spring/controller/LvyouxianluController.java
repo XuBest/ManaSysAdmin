@@ -95,7 +95,7 @@ public class LvyouxianluController extends BaseController
     @RequestMapping("/lvyouxianlulist")
     public String index()
     {
-            String order = Request.get("order" , "id");
+        String order = Request.get("order" , "id");
         String sort  = Request.get("sort" , "desc");
 
         Example example = new Example(Lvyouxianlu.class);

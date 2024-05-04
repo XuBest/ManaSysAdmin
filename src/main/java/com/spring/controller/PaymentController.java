@@ -29,15 +29,15 @@ public class PaymentController extends BaseController{
             biao =request.getParameter("biao");
         }
 
-        String sql = "update " + biao + " set iszf='是' where id='" + id + "'";
+        String sql = "update " + biao + " set ifpay='是' where id='" + id + "'";
         new CommDAO().commOper(sql);
         HashMap order = Query.make(biao).find(id);
 
 
 
-        if("yuding".equals(biao))
+        if("ticketinfo".equals(biao))
         {
-            Query.execute("update yuding set zhuangtai='预定成功' where id='"+order.get("id")+"'");
+            Query.execute("update ticketinfo set ticketstatus='购票成功' where id='"+order.get("id")+"'");
 
 
         }
@@ -45,4 +45,5 @@ public class PaymentController extends BaseController{
         String referer = Request.get("referer").equals("") ? "sy.do" : Request.get("referer");
         return showSuccess("支付成功",referer);
     }
+
 }
