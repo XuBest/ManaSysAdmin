@@ -6,9 +6,10 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Table(name = "ticketinfo")
-public class Ticketinfo {
+public class Ticketinfo implements Serializable {
 
     @GeneratedValue(generator = "JDBC") // 自增的主键映射
     @Id

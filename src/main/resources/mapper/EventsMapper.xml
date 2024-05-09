@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.EventsMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Events">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                                    <result column="eventName" property="eventName" jdbcType="VARCHAR"/>
+                                    <result column="eventContent" property="eventContent" jdbcType="VARCHAR"/>
+                                    <result column="maxJoin" property="maxJoin" jdbcType="INTEGER"/>
+                                    <result column="publishTime" property="publishTime" jdbcType="VARCHAR"/>
+
+                                    <result column="endTime" property="endTime" jdbcType="VARCHAR"/>
+                                    <result column="eventStatus" property="eventStatus" jdbcType="VARCHAR"/>
+                                    <result column="counter" property="counter" jdbcType="INTEGER"/>
+                                    <result column="success" property="success" jdbcType="INTEGER"/>
+                                    <result column="reginum" property="reginum" jdbcType="INTEGER"/>
+                                    <result column="picture" property="picture" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, eventName, eventContent,maxJoin, publishTime, endTime, eventStatus, counter, success, reginum , picture   </sql>
+    </mapper>

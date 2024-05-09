@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.RegistrationinfoMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Registrationinfo">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="eventid" property="eventid" jdbcType="INTEGER"/>
+                                    <result column="eventName" property="eventName" jdbcType="VARCHAR"/>
+                                    <result column="endTime" property="endTime" jdbcType="VARCHAR"/>
+                                    <result column="eventStatus" property="eventStatus" jdbcType="VARCHAR"/>
+                                    <result column="telephone" property="telephone" jdbcType="VARCHAR"/>
+                                    <result column="regiStatus" property="regiStatus" jdbcType="VARCHAR"/>
+                                    <result column="notes" property="notes" jdbcType="VARCHAR"/>
+                                    <result column="reserver" property="reserver" jdbcType="VARCHAR"/>
+                                    <result column="regiTime" property="regiTime" jdbcType="VARCHAR"/>
+                                    <result column="startTime" property="startTime" jdbcType="VARCHAR"/>
+                                    <result column="adder" property="adder" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, eventid, eventName, endTime, eventStatus, telephone, regiStatus, notes, reserver, regiTime, startTime, adder  </sql>
+    </mapper>

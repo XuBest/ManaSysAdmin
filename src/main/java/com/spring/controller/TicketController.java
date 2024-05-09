@@ -100,8 +100,6 @@ public class TicketController extends BaseController{
     public String add()
     {
         _var = new LinkedHashMap(); // 重置数据
-
-
         return json();   // 将数据写给前端
     }
     /**获取信息，返回信息添加页面*/
@@ -209,9 +207,7 @@ public class TicketController extends BaseController{
         return json();   // 将数据写给前端
     }
 
-    /**
-     *  删除
-     */
+    /**删除*/
     @RequestMapping("/ticket_delete")
     public String delete()
     {

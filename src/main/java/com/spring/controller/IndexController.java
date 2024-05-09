@@ -35,7 +35,9 @@ public class IndexController extends BaseController{
             
             ArrayList<HashMap> lvyouxianlulist3 = Query.make("lvyouxianlu").limit(4).order("id desc").select();
             assign("lvyouxianlulist3" , lvyouxianlulist3);
-            
+
+            ArrayList<HashMap> ticketinfo3 = Query.make("ticket").limit(4).order("id desc").select();
+            assign("ticketinfo3" , ticketinfo3);
             
             ArrayList<HashMap> xinwenxinxilist4 = Query.make("xinwenxinxi").limit(4).order("id desc").select();
             assign("xinwenxinxilist4" , xinwenxinxilist4);
